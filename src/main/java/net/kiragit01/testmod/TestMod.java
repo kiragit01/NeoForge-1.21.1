@@ -1,6 +1,7 @@
 package net.kiragit01.testmod;
 
 import net.kiragit01.testmod.block.ModBlocks;
+import net.kiragit01.testmod.item.ModCreativeModeTabs;
 import net.kiragit01.testmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -48,6 +49,8 @@ public class TestMod
         NeoForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
