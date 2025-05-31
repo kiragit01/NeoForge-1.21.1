@@ -3,6 +3,7 @@
   , "item.testmod.raw_magictest": "Тест raw магия"
   , "block.testmod.magictest_block": "Тест магия блок"
   , "block.testmod.magictest_ore": "Тест магия руда"
+  , "block.testmod.magictest_deepslate_ore": "Тест магия глубокая руда"
   , "creativetab.testmod.magictest_items": "Магия предметы"
   , "creativetab.testmod.magictest_blocks": "Магия блоки"
 }

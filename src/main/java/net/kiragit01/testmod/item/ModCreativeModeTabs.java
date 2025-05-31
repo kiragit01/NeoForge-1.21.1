@@ -34,6 +34,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output)-> {
                         output.accept(ModBlocks.MAGICTEST_BLOCK);
                         output.accept(ModBlocks.MAGICTEST_ORE);
+                        output.accept(ModBlocks.MAGICTEST_DEEPSLATE_ORE);
                     })
                     .build());
     
