@@ -25,6 +25,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAWMAGICTEST);
                         output.accept(ModItems.CHISEL_TOOL);
                         output.accept(ModItems.TOMATO);
+                        output.accept(ModItems.FROSTFIRE_ICE);
+                        output.accept(ModItems.COAL_PLUS);
                     })
                     .build());
 
