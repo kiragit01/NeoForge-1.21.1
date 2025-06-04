@@ -1,7 +1,9 @@
 {
   "item.testmod.magictest": "Тест магия"
   , "item.testmod.raw_magictest": "Тест raw магия"
+  , "item.testmod.chisel_tool": "магическая палка"
   , "block.testmod.magictest_block": "Тест магия блок"
+  , "block.testmod.magic_block": "Магический блок"
   , "block.testmod.magictest_ore": "Тест магия руда"
   , "block.testmod.magictest_deepslate_ore": "Тест магия глубокая руда"
   , "creativetab.testmod.magictest_items": "Магия предметы"

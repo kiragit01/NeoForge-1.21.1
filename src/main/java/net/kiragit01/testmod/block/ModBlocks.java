@@ -1,12 +1,14 @@
 package net.kiragit01.testmod.block;
 
 import net.kiragit01.testmod.TestMod;
+import net.kiragit01.testmod.block.custom.MagicBlock;
 import net.kiragit01.testmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.MagmaBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -35,8 +37,20 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(2,10),
                     BlockBehaviour.Properties.of()
                             .strength(0.1f)
-                            .requiresCorrectToolForDrops()
-                            .sound(SoundType.GLASS)));
+                            .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f)));
+
+//    public static final DeferredBlock<Block> CUCUMBER_BLOCK = registerBlock("magictest_deepslate_ore",
+//            () -> new DropExperienceBlock(UniformInt.of(2,10),
+//                    BlockBehaviour.Properties.of()
+//                            .strength(0.1f)
+//                            .requiresCorrectToolForDrops()
+//                            .sound(SoundType.GLASS)));
+
+
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

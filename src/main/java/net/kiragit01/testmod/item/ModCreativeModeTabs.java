@@ -23,6 +23,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output)-> {
                         output.accept(ModItems.MAGICTEST);
                         output.accept(ModItems.RAWMAGICTEST);
+                        output.accept(ModItems.CHISEL_TOOL);
+                        output.accept(ModItems.TOMATO);
                     })
                     .build());
 
@@ -35,6 +37,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MAGICTEST_BLOCK);
                         output.accept(ModBlocks.MAGICTEST_ORE);
                         output.accept(ModBlocks.MAGICTEST_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.MAGIC_BLOCK);
                     })
                     .build());
     
