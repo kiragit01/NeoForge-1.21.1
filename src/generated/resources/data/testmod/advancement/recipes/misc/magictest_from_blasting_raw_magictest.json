@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_magictest": {
+      "conditions": {
+        "items": [
+          {
+            "items": "testmod:raw_magictest"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "testmod:magictest_from_blasting_raw_magictest"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_magictest"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "testmod:magictest_from_blasting_raw_magictest"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+// 1.21.1	2025-06-07T23:05:11.3281008	Block States: testmod
+d373f74e4c16171a70965858f830c438cb6d2885 assets/testmod/blockstates/magictest_block.json
+a711621535fb07031f56fe0c36a2c07bea171814 assets/testmod/blockstates/magictest_deepslate_ore.json
+8140085d2b0ec0a5cc60d17d053ec731ba1dfed9 assets/testmod/blockstates/magictest_ore.json
+e74be35792306d17fb5b318ddd98e0a1affe5e47 assets/testmod/blockstates/magic_block.json
+7aa0bdfaf5e72f9484ba58f9900bb1890809d0c7 assets/testmod/models/block/magictest_block.json
+f21dbc42ba3ea86ce6d5e4f1e4ecb6fcb2c847a3 assets/testmod/models/block/magictest_deepslate_ore.json
+2cc06ff8d1d899df2f2e26b4ab51e2215de70543 assets/testmod/models/block/magictest_ore.json
+9a06e54e22cd98054d399605ca2038951a99fa94 assets/testmod/models/block/magic_block.json
+d2a2bb7d31fdc38680d4e98ad8d9cf74b56a37bb assets/testmod/models/item/magictest_block.json
+5936374d18a52633f189f0c0e6926e9abccd9d31 assets/testmod/models/item/magictest_deepslate_ore.json
+21fa292e77b0b457d2ae6b99fbb6f43025f87c05 assets/testmod/models/item/magictest_ore.json
+c208ec43fa86882c5cf0cfffbc412e1c66dc6eba assets/testmod/models/item/magic_block.json

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_magictest_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "testmod:magictest_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "testmod:magictest_from_blasting_magictest_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_magictest_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "testmod:magictest_from_blasting_magictest_ore"
+    ]
+  }
+}

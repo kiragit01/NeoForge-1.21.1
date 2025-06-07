@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "testmod:magictest_block",
-    "testmod:magictest_ore",
-    "testmod:magictest_deepslate_ore"
-  ]
-}

@@ -1,0 +1,10 @@
+{
+  "values": {
+    "testmod:coal_plus": {
+      "burn_time": 100
+    },
+    "testmod:frostfire_ice": {
+      "burn_time": 2000
+    }
+  }
+}
