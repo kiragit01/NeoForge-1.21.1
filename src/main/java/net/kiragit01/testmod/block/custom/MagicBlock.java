@@ -1,7 +1,9 @@
 package net.kiragit01.testmod.block.custom;
 
 import net.kiragit01.testmod.item.ModItems;
+import net.kiragit01.testmod.util.ModTags;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
@@ -11,10 +13,13 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
+
+import java.util.List;
 
 public class MagicBlock extends Block {
     public MagicBlock(Properties properties) {
@@ -33,6 +38,9 @@ public class MagicBlock extends Block {
             if(itemEntity.getItem().getItem() == ModItems.RAWMAGICTEST.get()) {
                 itemEntity.setItem(new ItemStack(ModItems.MAGICTEST.get(), itemEntity.getItem().getCount()));
             }
+            if(isValidItem(itemEntity.getItem())) {
+                itemEntity.setItem(new ItemStack(Items.COD, itemEntity.getItem().getCount()));
+            }
             if(itemEntity.getItem().getItem() == Items.APPLE) {
                 itemEntity.setItem(new ItemStack(Items.ARROW, itemEntity.getItem().getCount()));
             }
@@ -41,5 +49,15 @@ public class MagicBlock extends Block {
             }
         }
         super.stepOn(level, pos, state, entity);
+    }
+
+    private boolean isValidItem(ItemStack item) {
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        tooltipComponents.add(Component.translatable("test.testmod.magic_block"));
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

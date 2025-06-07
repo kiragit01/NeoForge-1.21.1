@@ -11,4 +11,8 @@
   , "block.testmod.magictest_deepslate_ore": "Тест магия глубокая руда"
   , "creativetab.testmod.magictest_items": "Магия предметы"
   , "creativetab.testmod.magictest_blocks": "Магия блоки"
+  , "test.testmod.magic_block": "Мега крутое описание к §c§kблоку магии§r§r"
+  , "tooltip.testmod.chiseltool.shift": "интрумент меняет §2§lнекоторые блоки§r§r§2"
+  , "tooltip.testmod.chiseltool": "нажми на §n§bShift§r§r§2"
+  , "tooltip.testmod.tomato": "Съешь меня!"
 }

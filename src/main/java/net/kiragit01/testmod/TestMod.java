@@ -51,7 +51,6 @@ public class TestMod
         modEventBus.addListener(this::addCreative);
 
         ModCreativeModeTabs.register(modEventBus);
-
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
