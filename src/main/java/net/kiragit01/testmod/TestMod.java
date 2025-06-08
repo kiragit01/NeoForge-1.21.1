@@ -1,6 +1,7 @@
 package net.kiragit01.testmod;
 
 import net.kiragit01.testmod.block.ModBlocks;
+import net.kiragit01.testmod.component.ModDataComponent;
 import net.kiragit01.testmod.item.ModCreativeModeTabs;
 import net.kiragit01.testmod.item.ModItems;
 import org.slf4j.Logger;
@@ -53,6 +54,7 @@ public class TestMod
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModDataComponent.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }

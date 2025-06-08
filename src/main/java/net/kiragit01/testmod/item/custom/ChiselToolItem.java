@@ -1,6 +1,7 @@
 package net.kiragit01.testmod.item.custom;
 
 import net.kiragit01.testmod.block.ModBlocks;
+import net.kiragit01.testmod.component.ModDataComponent;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -48,6 +49,8 @@ public class ChiselToolItem extends Item {
                         (item) -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, context.getClickedPos(), SoundEvents.BLAZE_SHOOT, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponent.COORDINATES, context.getClickedPos());
             }
         }
 
@@ -60,7 +63,9 @@ public class ChiselToolItem extends Item {
             tooltipComponents.add(Component.translatable("tooltip.testmod.chiseltool.shift"));
         } else {
             tooltipComponents.add(Component.translatable("tooltip.testmod.chiseltool"));
-
+        }
+        if (stack.get(ModDataComponent.COORDINATES) != null) {
+            tooltipComponents.add(Component.translatable("Последний клик: " + stack.get(ModDataComponent.COORDINATES)));
         }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
