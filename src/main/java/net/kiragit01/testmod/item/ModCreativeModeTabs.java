@@ -40,6 +40,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MAGICTEST_ORE);
                         output.accept(ModBlocks.MAGICTEST_DEEPSLATE_ORE);
                         output.accept(ModBlocks.MAGIC_BLOCK);
+                        output.accept(ModBlocks.MAGIC_LAMP_BLOCK);
                     })
                     .build());
     

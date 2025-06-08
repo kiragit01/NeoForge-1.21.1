@@ -1,5 +1,6 @@
-// 1.21.1	2025-06-07T22:55:26.1723629	Loot Tables
+// 1.21.1	2025-06-08T15:26:09.154734	Loot Tables
 f275b67717c16c8185decdbb4364092906a722a2 data/testmod/loot_table/blocks/magictest_block.json
 cff6a7291c5809567708239de0a7721e51d97339 data/testmod/loot_table/blocks/magictest_deepslate_ore.json
 8dbe612ce8e5ba18e1218f886b45bc0a4efb6473 data/testmod/loot_table/blocks/magictest_ore.json
 61e3e8f2c8dfe3faa10b926e2715427fdfac8ea3 data/testmod/loot_table/blocks/magic_block.json
+c22403af46d39430444c903eba1ba246d10f6e9a data/testmod/loot_table/blocks/magic_lamp_block.json

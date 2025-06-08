@@ -2,13 +2,13 @@ package net.kiragit01.testmod.block;
 
 import net.kiragit01.testmod.TestMod;
 import net.kiragit01.testmod.block.custom.MagicBlock;
+import net.kiragit01.testmod.block.custom.MagicLampBlock;
 import net.kiragit01.testmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.MagmaBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -41,6 +41,10 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f)));
+
+    public static final DeferredBlock<Block> MAGIC_LAMP_BLOCK = registerBlock("magic_lamp_block",
+            () -> new MagicLampBlock(BlockBehaviour.Properties.of().strength(0.1f)
+                    .lightLevel(state -> state.getValue(MagicLampBlock.CLICKED) ? 15 : 0)));
 
 //    public static final DeferredBlock<Block> CUCUMBER_BLOCK = registerBlock("magictest_deepslate_ore",
 //            () -> new DropExperienceBlock(UniformInt.of(2,10),

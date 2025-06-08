@@ -9,6 +9,7 @@
   , "block.testmod.magic_block": "Магический блок"
   , "block.testmod.magictest_ore": "Тест магия руда"
   , "block.testmod.magictest_deepslate_ore": "Тест магия глубокая руда"
+  , "block.testmod.magic_lamp_block": "Светяшка"
   , "creativetab.testmod.magictest_items": "Магия предметы"
   , "creativetab.testmod.magictest_blocks": "Магия блоки"
   , "test.testmod.magic_block": "Мега крутое описание к §c§kблоку магии§r§r"
