@@ -4,10 +4,10 @@ import net.kiragit01.testmod.TestMod;
 import net.kiragit01.testmod.item.custom.ChiselToolItem;
 import net.kiragit01.testmod.item.custom.FuelItem;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.SimpleTier;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -33,6 +33,22 @@ public class ModItems {
             () -> new FuelItem(new Item.Properties(), 100));
     public static final DeferredItem<Item> COAL_PLUS = ITEMS.register("coal_plus",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<SwordItem> MAGIC_SWORD = ITEMS.register("magic_sword",
+            () -> new SwordItem(ModToolTiers.MAGICTEST,
+                    new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.MAGICTEST, 65, 5f))));
+    public static final DeferredItem<PickaxeItem> MAGIC_PICKAXE = ITEMS.register("magic_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.MAGICTEST,
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.MAGICTEST, 15, -2.6f))));
+    public static final DeferredItem<AxeItem> MAGIC_AXE = ITEMS.register("magic_axe",
+            () -> new AxeItem(ModToolTiers.MAGICTEST,
+                    new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.MAGICTEST, 95, -1.6f))));
+    public static final DeferredItem<HoeItem> MAGIC_HOE = ITEMS.register("magic_hoe",
+            () -> new HoeItem(ModToolTiers.MAGICTEST,
+                    new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.MAGICTEST, 5, -2.6f))));
+    public static final DeferredItem<ShovelItem> MAGIC_SHOVEL = ITEMS.register("magic_shovel",
+            () -> new ShovelItem(ModToolTiers.MAGICTEST,
+                    new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.MAGICTEST, 9, -2.6f))));
 
 
 

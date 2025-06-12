@@ -1,2 +1,7 @@
-// 1.21.1	2025-06-07T23:17:20.6586048	Tags for minecraft:item mod id testmod
+// 1.21.1	2025-06-12T13:04:11.4425461	Tags for minecraft:item mod id testmod
+1c2e740a34cea67862a83b36e92a4b810a9c949b data/minecraft/tags/item/axes.json
+d65acdbeaac45b86c413319cb56e4d37c0ddb5a5 data/minecraft/tags/item/hoes.json
+1080bcb220c9643679c381da620128818549711d data/minecraft/tags/item/pickaxes.json
+bbabd21213008bd0c64b425e2288901d84bd3571 data/minecraft/tags/item/shovels.json
+5e7ec7182a7d32dde0ece2eedd5f6a24a8f3388c data/minecraft/tags/item/swords.json
 bca7d8e8f8f0deca8cc280e6a278168ddcc0c008 data/testmod/tags/item/transformable_items.json

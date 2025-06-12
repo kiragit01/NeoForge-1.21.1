@@ -3,7 +3,6 @@ package net.kiragit01.testmod.component;
 import net.kiragit01.testmod.TestMod;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponentType;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;

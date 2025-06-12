@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#testmod:needs_magic_block"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_iron_tool"
+  ]
+}

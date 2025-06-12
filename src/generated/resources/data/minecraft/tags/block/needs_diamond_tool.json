@@ -1,5 +1,6 @@
 {
   "values": [
-    "testmod:magictest_deepslate_ore"
+    "testmod:magictest_deepslate_ore",
+    "testmod:magic_lamp_block"
   ]
 }

@@ -5,6 +5,16 @@
   , "item.testmod.tomato": "еда"
   , "item.testmod.coal_plus": "мега уголь плюс"
   , "item.testmod.frostfire_ice": "отморозок огня"
+
+
+
+  , "item.testmod.magic_sword": "Magic Sword"
+  , "item.testmod.magic_pickaxe": "Magic Pickaxe"
+  , "item.testmod.magic_shovel": "Magic Shovel"
+  , "item.testmod.magic_axe": "Magic Axe"
+
+
+
   , "block.testmod.magictest_block": "Тест магия блок"
   , "block.testmod.magic_block": "Магический блок"
   , "block.testmod.magictest_ore": "Тест магия руда"

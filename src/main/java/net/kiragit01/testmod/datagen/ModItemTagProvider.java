@@ -6,6 +6,7 @@ import net.kiragit01.testmod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
@@ -28,6 +29,18 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.TOMATO.get())
                 .add(Items.COAL)
                 .add(Items.STICK);
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.MAGIC_SWORD.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.MAGIC_PICKAXE.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.MAGIC_SHOVEL.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.MAGIC_AXE.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.MAGIC_HOE.get());
+
 
     }
 }

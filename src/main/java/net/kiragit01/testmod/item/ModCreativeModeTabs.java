@@ -27,6 +27,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TOMATO);
                         output.accept(ModItems.FROSTFIRE_ICE);
                         output.accept(ModItems.COAL_PLUS);
+
+                        output.accept(ModItems.MAGIC_SWORD);
+                        output.accept(ModItems.MAGIC_PICKAXE);
+                        output.accept(ModItems.MAGIC_SHOVEL);
+                        output.accept(ModItems.MAGIC_AXE);
+                        output.accept(ModItems.MAGIC_HOE);
+
                     })
                     .build());
 

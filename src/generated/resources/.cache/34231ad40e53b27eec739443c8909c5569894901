@@ -1,4 +1,6 @@
-// 1.21.1	2025-06-07T23:17:20.657605	Tags for minecraft:block mod id testmod
-6db766339488eb790370fe1e51266345cdf54eb8 data/minecraft/tags/block/mineable/pickaxe.json
-0824138457d2408b63fe0f3fd84db26d6444fdb6 data/minecraft/tags/block/needs_diamond_tool.json
+// 1.21.1	2025-06-12T13:04:11.4415467	Tags for minecraft:block mod id testmod
+d0b8d3d8df9790c3b4eec1ac8cf597f482042aa1 data/minecraft/tags/block/mineable/pickaxe.json
+2c6392a3cb7645bf94884f0345d0ea574036bb06 data/minecraft/tags/block/needs_diamond_tool.json
 5bd15d31a8830645b2bcf42a135a2f87bdbc0961 data/minecraft/tags/block/needs_iron_tool.json
+56b0933b4b2235aa01cddd809ef784170fec1eba data/testmod/tags/block/incorrect_for_magic_block.json
+c1e24731cdb6b511bb63d13ba1f6efe5df143c10 data/testmod/tags/block/needs_magic_block.json
