@@ -21,7 +21,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAWMAGICTEST.get());
 
         basicItem(ModItems.FROSTFIRE_ICE.get());
-        basicItem(ModItems.CHISEL_TOOL.get());
+//        basicItem(ModItems.CHISEL_TOOL.get());
         basicItem(ModItems.COAL_PLUS.get());
         basicItem(ModItems.TOMATO.get());
 

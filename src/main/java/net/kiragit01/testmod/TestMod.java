@@ -4,6 +4,7 @@ import net.kiragit01.testmod.block.ModBlocks;
 import net.kiragit01.testmod.component.ModDataComponent;
 import net.kiragit01.testmod.item.ModCreativeModeTabs;
 import net.kiragit01.testmod.item.ModItems;
+import net.kiragit01.testmod.util.ModItemProperties;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -84,6 +85,7 @@ public class TestMod
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }
